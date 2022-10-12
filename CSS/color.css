@@ -1,0 +1,16 @@
+/* class for #message when it's actively shown */
+.interaction {
+  background-color: rgba(127, 255, 212, 0.7);
+}
+/* class to cover the entire window when the game is inactive */
+#viewportOverlay {
+  background: rgba(71, 67, 67, 0.7);
+}
+/* class is used for both start buttons */
+.startButton {
+  background-color: #fc5a98;
+}
+.startButton:hover,
+.startButton:focus {
+  background-color: #f082ac;
+}

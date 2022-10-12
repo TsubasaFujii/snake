@@ -1,0 +1,75 @@
+:root {
+  --button-border-radius: 20px;
+  --button-padding: 0.5em 0.7em;
+  --button-box-shadow: 5px 5px rgba(50, 50, 51, 0.2);
+}
+/* class to cover the entire window when the game is inactive */
+#viewportOverlay {
+  min-width: 100vw;
+  min-height: 100vh;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#message {
+  max-width: max-content;
+  min-height: 200px;
+  padding: 1rem;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+
+  display: grid;
+  grid-template-columns: 1fr auto auto 1fr;
+  grid-template-rows: 2fr 1fr 1fr;
+  gap: 0.5rem;
+
+  border-radius: 10px;
+}
+.heading {
+  grid-column: 2 / span 2;
+  grid-row: 1 / span 1;
+
+  text-align: center;
+  text-shadow: var(--button-box-shadow);
+}
+#message > p {
+  height: max-content;
+
+  grid-column: 2 / span 2;
+  grid-row: 2 / span 1;
+  align-self: center;
+
+  text-align: center;
+}
+#buttonSinglePlayer {
+  padding: var(--button-padding);
+
+  grid-column: 2 / span 1;
+  grid-row: 3 / span 1;
+  align-self: end;
+  
+  border-radius: var(--button-border-radius);
+  border-style: none;
+  box-shadow: var(--button-box-shadow);
+  transition: color 100ms;
+}
+#buttonTwoPlayer {
+  padding: var(--button-padding);
+
+  grid-column: 3 / span 1;
+  grid-row: 3 / span 1;
+  align-self: end;
+
+  border-radius: var(--button-border-radius);
+  border-style: none;
+  box-shadow: var(--button-box-shadow);
+  transition: color 100ms;
+}
+.hidden {
+  visibility: hidden;
+}

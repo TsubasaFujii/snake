@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Funky Snake</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Press+Start+2P&family=Roboto&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css\reset.css" />
+    <link rel="stylesheet" href="css\index.css" />
+    <link rel="stylesheet" href="css\color.css" />
+    <link rel="stylesheet" href="css\typography.css" />
+    <link rel="stylesheet" href="css\elements\board.css" />
+    <link rel="stylesheet" href="css\elements\viewportOverlay.css" />
+    <!-- JavaScript -->
+    <script type="module" src="javascript\main.js"></script>
+  </head>
+  <body>
+    <main class ="main-layout-narrow">
+      <section id="board"></section>
+      <div class="score score-layout-narrow">
+        <div class="first-player">
+          Your score<br>
+          <strong>0</strong>
+        </div>
+      </div>
+      <section id="viewportOverlay">
+        <div id="message" class="interaction">
+          <h1 class="heading">Funky<br>Snake</h1>
+          <p>
+            Choose number of players
+          </p>
+          <button id="buttonSinglePlayer" class="startButton">1 Player</button>
+          <button id="buttonTwoPlayer" class="startButton">2 Players</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+#board {
+  justify-self: center;
+}
+/* row in the game area */
+#board > div {
+  display: block;
+}
+.tile {
+  height: 100%;
+  display: inline-block;
+  border: 1px solid rgba(49, 49, 49, 0.466);
+}
+.score {
+  padding : 10px;
+}
+.second-player,
+.first-player {
+  margin: 0 1rem;
+  text-align: center;
+}
+/* class for main when the screen's height is longer */
+.main-layout-narrow {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-evenly;
+}
+.score-layout-narrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
