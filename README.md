@@ -1,6 +1,8 @@
 # Funky Snake [School Project]
 
-Famous classic game. Up to two players.\
+I made this for a school assignment whose purpose was to practice DOM manipulation in December, 2021.
+
+Famous classic game. Up to two players.<br />
 Snakes are controlled by keys and because of that, not mobile-friendly.
 
 - It's built in vanilla JavaScript, HTML, and CSS.
